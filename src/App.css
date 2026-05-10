@@ -277,3 +277,46 @@ body{
   }
 
 }
+/* =========================
+SIGNATURE BUTTONS
+========================= */
+
+.save-btn,
+.clear-btn {
+  padding: 14px 28px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  cursor: pointer;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  color: white;
+
+  transition: 0.3s ease;
+}
+
+.save-btn {
+  background: linear-gradient(
+    to right,
+    #2563eb,
+    #06b6d4
+  );
+}
+
+.clear-btn {
+  background: linear-gradient(
+    to right,
+    #ef4444,
+    #dc2626
+  );
+}
+
+.save-btn:hover,
+.clear-btn:hover {
+  transform: scale(1.05);
+}

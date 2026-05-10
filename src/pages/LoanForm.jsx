@@ -157,13 +157,20 @@ function LoanForm() {
       return false;
     }
 
+  if (step === 8) {
+
     if (
-      step === 8 &&
-      !formData.signature
+      !formData.signature ||
+      formData.signature.trim() === ""
     ) {
-      toast.error("Save Signature");
+      toast.error(
+        "Please Save Signature"
+      );
+
       return false;
     }
+
+  }
 
     return true;
   };
